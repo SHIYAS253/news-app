@@ -7,5 +7,5 @@
 //     "institute": "luminar"
 //   };
 
-//   Newsss = Publicapiresponse.fromJson(mymap);
+//   Newsss = Newsss.fromJson(mymap);
 // }

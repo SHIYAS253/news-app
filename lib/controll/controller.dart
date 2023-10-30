@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class Screencontroller with ChangeNotifier {
-  Publicapiresponse? responsedata;
+  Newsss? responsedata;
   bool isloading = false;
   fetchdata({String? searchquery = "trending"}) async {
     final url = Uri.parse(
@@ -15,7 +15,7 @@ class Screencontroller with ChangeNotifier {
 
     print(response.statusCode);
 
-    responsedata = Publicapiresponse.fromJson(decodedata);
+    responsedata = Newsss.fromJson(decodedata);
 
     notifyListeners();
   }
